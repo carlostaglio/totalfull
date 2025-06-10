@@ -1,0 +1,149 @@
+
+/* Estilos personalizados */
+body {
+    padding: 20px;
+    font-family: "Lato", sans-serif;
+}
+.container {
+    max-width: 900px; /* Ancho máximo del contenedor principal */
+}
+
+h2 {
+    color: #323B21;
+}
+
+p {
+    color: #323B21;
+    font-weight: 300;
+}
+
+#beneficios {
+    background: #fff;
+
+}
+
+.cardes .carde {
+    /* width: 30%; */
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.carde:focus .front {
+    background: #fff;
+    box-shadow: 0 0 40px 2px var(--verdeModoAhorro);
+    /* box-shadow: 0 0 20px 1px rgba(0,0,0,0.5); */
+    transform: translateY(0);
+    height: 250px;
+
+}
+
+.carde:focus .front h2 {
+    color: #6D776F;
+
+
+}
+
+.carde:focus .back {
+    transform: translateY(0);
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.5);
+}
+
+.front {
+    background: white;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    padding: 50px 0;
+    transition: 0.5s;
+    transform: translateY(100px);
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.5);
+    height: 250px;
+
+}
+
+.front h2 {
+    color: #6D776F;
+    font-size: 20px;
+    transition: 0.5s;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.back {
+    position: relative;
+    z-index: 5;
+    padding: 10px;
+    transform: translateY(-122px);
+    transition: 0.5s;
+    background: #fff;
+}
+
+.back:focus {
+    background: #fff;
+    color: #6D776F;
+}
+
+.back h3 {
+    font-size: 20px;
+
+}
+
+.back p {
+    font-size: 15px;
+    margin-top: 10px;
+    color: #6D776F;
+}
+
+/* Media */
+@media (max-width: 1001px) {
+
+    /* .container{
+		width: 800px;
+	} */
+    .back h3 {
+        font-size: 30px;
+    }
+
+    .back p {
+        font-size: 14px;
+    }
+}
+
+.gato {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 130vw;
+    z-index: -1;
+}
+
+.logo {
+    position: absolute;
+    width: 25vw;
+    bottom: 3%;
+    right: 10%;
+}
+
+.paragraph-felicitacion {
+    margin-bottom: 5rem; /* Espacio entre secciones de párrafo */
+    font-size: 1.5rem;
+}
+
+.mensaje-felicitaciones {
+    font-size: 1.5rem;
+}
+
+.pata1 {
+    width: 40vw;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+}
+
+.pata2 {
+    width: 40vw;
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+}

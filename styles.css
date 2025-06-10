@@ -1,0 +1,95 @@
+
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+h1 {
+    color: #343a40; /* Darker text for title */
+}
+
+p.lead {
+    color: #6c757d; /* Slightly lighter text for description */
+}
+
+#catPaw {
+    position: relative;
+    width: 250px; /* Adjust size as needed */
+    height: 280px; /* Adjust size as needed */
+    background-color: #fff; /* Paw color (a light brown/peach) */
+    border-radius: 40% 40% 60% 60%; /* Rounded top, slightly less rounded bottom */
+    transform: rotate(0deg); /* Rotate to make it point up */
+    overflow: hidden; /* Ensure pads stay within */
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2); /* Subtle shadow */
+    border: 1px solid lightblue;
+}
+
+.paw-pad {
+    position: absolute;
+    background-color: #fff; /* Slightly darker paw pad color */
+    border-radius: 50%;
+    border: 1px solid lightblue;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out; /* Smooth transition for hover */
+    display: flex; /* Use flexbox to center the anchor */
+    justify-content: center;
+    align-items: center;
+    transform: rotate(0deg);
+}
+
+/* Make the anchor fill the paw pad for better clickability */
+.paw-pad a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none; /* Remove underline from links */
+    color: transparent; /* Make link text invisible */
+}
+
+.paw-pad:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    background-color: #a87245; /* Darken on hover */
+}
+
+/* Main large pad */
+.paw-main {
+    width: 120px;
+    height: 100px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(180deg); /* Counter-rotate for the pad itself */
+    border-radius: 60% 60% 40% 40%; /* Slightly different shape for main pad */
+}
+
+/* Smaller pads positioning (adjust top/left percentages as needed) */
+.paw-small-1 {
+    width: 50px;
+    height: 50px;
+    top: 25%;
+    left: 5%;
+    transform: rotate(0deg); /* Counter-rotate */
+}
+
+.paw-small-2 {
+    width: 50px;
+    height: 50px;
+    top: 15%;
+    left: 30%;
+    transform: rotate(180deg); /* Counter-rotate */
+}
+
+.paw-small-3 {
+    width: 50px;
+    height: 50px;
+    top: 15%;
+    left: 55%;
+    transform: rotate(0deg); /* Counter-rotate */
+}
+
+.paw-small-4 {
+    width: 50px;
+    height: 50px;
+    top: 25%;
+    left: 75%;
+    transform: rotate(0deg); /* Counter-rotate */
+}

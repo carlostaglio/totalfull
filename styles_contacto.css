@@ -1,0 +1,65 @@
+
+body {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: "Lato", sans-serif;
+}
+
+
+
+.container {
+    max-width: 960px; /* Ancho máximo del contenedor principal */
+}
+.column-content {
+    padding: 20px;
+    text-align: center; /* Centra el texto y la imagen dentro de cada columna */
+}
+
+p {
+    color: #323B21;
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-top: 4rem;
+}
+
+.footer-links {
+    padding-top: 8rem;
+}
+
+.footer-links p {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+.column-content img {
+    max-width: 100%; /* Asegura que la imagen sea responsiva y no se desborde */
+    height: auto;
+    border-radius: 8px; /* Bordes ligeramente redondeados para las imágenes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para las imágenes */
+}
+
+.frame-container {
+    margin-top: 15px; /* Espacio entre el párrafo y la imagen */
+    position: relative;
+    width: 100%; /* Adjust as needed */
+    padding-bottom: 100%; /* For a 1:1 (square) aspect ratio */
+    overflow: hidden; /* Hide any content that overflows */
+}
+.column-content iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px; /* Bordes ligeramente redondeados para las imágenes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para las imágenes */
+}
+.footer-links {
+    margin-top: 50px;
+    text-align: center; /* Centra los enlaces del pie de página */
+}
+.footer-links a {
+    margin: 0 15px; /* Espacio entre los enlaces */
+    font-size: 1.1em;
+    text-decoration: none; /* Quita el subrayado predeterminado */
+}

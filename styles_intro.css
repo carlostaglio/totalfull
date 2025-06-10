@@ -1,0 +1,50 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+/* Asegura que el body ocupe toda la pantalla y maneja el fondo */
+.custom-bg {
+    background-image: url('images/recurso 9.png'); /* Reemplaza con la ruta de tu imagen */
+    background-size: contain; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    overflow: hidden; /* Evita barras de desplazamiento si la imagen es más grande */
+}
+
+/* Estilos para los botones redondos */
+.custom-button {
+    width: 6em; /* Ancho del botón */
+    height: 6em; /* Alto del botón (igual al ancho para que sea redondo) */
+    border-radius: 50%; /* Hace el botón redondo */
+    display: flex; /* Para centrar el texto dentro del botón */
+    justify-content: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra el texto verticalmente */
+    background-color: #fff; /* Color de fondo del botón con transparencia */
+    color: rgba(0, 123, 255, 1); /* Color del texto del botón */
+    font-weight: bold; /* Negrita */
+    font-size: 1.2em; /* Tamaño del texto */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para el botón */
+    border: none; /* Quita el borde por defecto de Bootstrap */
+}
+
+.custom-button:hover {
+    background-color: rgba(0, 123, 255, 1); /* Cambia el color al pasar el ratón */
+    transform: scale(1.05); /* Ligeramente más grande al pasar el ratón */
+    color: white; /* Asegura que el texto siga siendo blanco al pasar el ratón */
+}
+
+/* Opcional: Para asegurar que el texto no se rompa en varias líneas en el botón */
+.custom-button-container {
+    text-align: center;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+.custom-button1-container {
+    position: relative;
+    bottom: 150px;
+}
+
+p {
+    color: #6c757d; /* Slightly lighter text for description */
+}
