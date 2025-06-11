@@ -6,10 +6,10 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log(currentPath);
     if (currentPath == "index.html" || currentPath == "") {
         sessionStorage.setItem("puntaje", 0);
-        sessionStorage.setItem("q1", false);
-        sessionStorage.setItem("q2", false);
-        sessionStorage.setItem("q3", false);
-        sessionStorage.setItem("q4", false);
+        sessionStorage.setItem("q1", "no");
+        sessionStorage.setItem("q2", "no");
+        sessionStorage.setItem("q3", "no");
+        sessionStorage.setItem("q4", "no");
         
         const juegoButton = document.getElementById('juegoButton');
         juegoButton.addEventListener('click', async function() {
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
             window.location.href = "https://carlostaglio.github.io/totalfull/";
         }
         if (sessionStorage.getItem("q1")) {
-            if(sessionStorage.getItem("q1") == true) {
+            if(sessionStorage.getItem("q1") == "yes") {
                 window.location.href = "https://carlostaglio.github.io/totalfull/pregunta2.html";
             }
         }
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const audioPath = "./audio/Prrr.mp3";
             const audio = new Audio(audioPath);
             sessionStorage.setItem("puntaje", 1);
-            sessionStorage.setItem("q1", true);
+            sessionStorage.setItem("q1", "yes");
             audio.play().catch(e => console.error("Error playing audio:", e));
             setTimeout(function() {
                 window.location.href = "https://carlostaglio.github.io/totalfull/pregunta2.html";
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const audio = new Audio(audioPath);
             audio.play().catch(e => console.error("Error playing audio:", e));
             sessionStorage.setItem("puntaje", 0);
-            sessionStorage.setItem("q1", true);
+            sessionStorage.setItem("q1", "yes");
             setTimeout(function() {
                 window.location.href = "https://carlostaglio.github.io/totalfull/pregunta2.html";
             }, 1500);
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
             window.location.href = "https://carlostaglio.github.io/totalfull/";
         }
         if (sessionStorage.getItem("q2")) {
-            if(sessionStorage.getItem("q2") == true) {
+            if(sessionStorage.getItem("q2") == "yes") {
                 window.location.href = "https://carlostaglio.github.io/totalfull/pregunta3.html";
             }
         }
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const audioPath = "./audio/Prrr.mp3";
             const audio = new Audio(audioPath);
             sessionStorage.setItem("puntaje", sessionStorage.getItem("puntaje")+1);
-            sessionStorage.setItem("q2", true);
+            sessionStorage.setItem("q2", "yes");
             audio.play().catch(e => console.error("Error playing audio:", e));
             setTimeout(function() {
                 window.location.href = "https://carlostaglio.github.io/totalfull/pregunta3.html";
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const audioPath = "./audio/Enojado.mp3";
             const audio = new Audio(audioPath);
             audio.play().catch(e => console.error("Error playing audio:", e));
-            sessionStorage.setItem("q2", true);
+            sessionStorage.setItem("q2", "yes");
             setTimeout(function() {
                 window.location.href = "https://carlostaglio.github.io/totalfull/pregunta3.html";
             }, 1500);
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
             window.location.href = "https://carlostaglio.github.io/totalfull/";
         }
         if (sessionStorage.getItem("q3")) {
-            if(sessionStorage.getItem("q3") == true) {
+            if(sessionStorage.getItem("q3") == "yes") {
                 window.location.href = "https://carlostaglio.github.io/totalfull/pregunta4.html";
             }
         }
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function() {
         pataA.addEventListener('click', async function() {
             const audioPath = "./audio/Enojado.mp3";
             const audio = new Audio(audioPath);
-            sessionStorage.setItem("q3", true);
+            sessionStorage.setItem("q3", "yes");
             audio.play().catch(e => console.error("Error playing audio:", e));
             setTimeout(function() {
                 window.location.href = "https://carlostaglio.github.io/totalfull/pregunta4.html";
@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const audio = new Audio(audioPath);
             audio.play().catch(e => console.error("Error playing audio:", e));
             sessionStorage.setItem("puntaje", sessionStorage.getItem("puntaje")+1);
-            sessionStorage.setItem("q1", true);
+            sessionStorage.setItem("q1", "yes");
             setTimeout(function() {
                 window.location.href = "https://carlostaglio.github.io/totalfull/pregunta4.html";
             }, 1500);
@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function() {
             window.location.href = "https://carlostaglio.github.io/totalfull/";
         }
         if (sessionStorage.getItem("q4")) {
-            if(sessionStorage.getItem("q4") == true) {
+            if(sessionStorage.getItem("q4") == "yes") {
                 window.location.href = "https://carlostaglio.github.io/totalfull/beneficios.html";
             }
         }
@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const audioPath = "./audio/Prrr.mp3";
             const audio = new Audio(audioPath);
             sessionStorage.setItem("puntaje", 1);
-            sessionStorage.setItem("q4", true);
+            sessionStorage.setItem("q4", "yes");
             audio.play().catch(e => console.error("Error playing audio:", e));
             setTimeout(function() {
                 if (sessionStorage.getItem("puntaje") == 4) {
@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const audioPath = "./audio/Enojado.mp3";
             const audio = new Audio(audioPath);
             audio.play().catch(e => console.error("Error playing audio:", e));
-            sessionStorage.setItem("q4", true);
+            sessionStorage.setItem("q4", "yes");
             setTimeout(function() {
                 window.location.href = "https://carlostaglio.github.io/totalfull/bastante_bien.html";
             }, 1500);
@@ -198,10 +198,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (currentPath == "beneficios.html") {
         sessionStorage.setItem("puntaje", 0);
-        sessionStorage.setItem("q1", false);
-        sessionStorage.setItem("q2", false);
-        sessionStorage.setItem("q3", false);
-        sessionStorage.setItem("q4", false);
+        sessionStorage.setItem("q1", "no");
+        sessionStorage.setItem("q2", "no");
+        sessionStorage.setItem("q3", "no");
+        sessionStorage.setItem("q4", "no");
         const cards = document.getElementsByClassName('carde1');
         Array.from(cards).forEach(function(card) {
             card.addEventListener('click', function() {
