@@ -4,6 +4,43 @@ document.addEventListener('DOMContentLoaded', function() {
     const pathArray = window.location.pathname.split("/");
     const currentPath = pathArray[pathArray.length - 1];
     console.log(currentPath);
+
+    const buttons = document.getElementsByClassName('custom-button-back');
+    Array.from(buttons).forEach(function(button) {
+        button.addEventListener('click', function() {
+            const audioPath = "./audio/Prrr.mpeg";
+            const audio = new Audio(audioPath);
+            audio.play().catch(e => console.error("Error playing audio:", e));
+            setTimeout(function() {
+                window.location.href = "https://carlostaglio.github.io/totalfull/";
+            }, 2000);
+        });
+    });
+
+    const buttonsContacto = document.getElementsByClassName('custom-button-contacto');
+    Array.from(buttonsContacto).forEach(function(button) {
+        button.addEventListener('click', function() {
+            const audioPath = "./audio/Prrr.mpeg";
+            const audio = new Audio(audioPath);
+            audio.play().catch(e => console.error("Error playing audio:", e));
+            setTimeout(function() {
+                window.location.href = "https://carlostaglio.github.io/totalfull/contacto.html";
+            }, 2000);
+        });
+    });
+
+    const buttonsBeneficios = document.getElementsByClassName('custom-button-beneficios');
+    Array.from(buttonsBeneficios).forEach(function(button) {
+        button.addEventListener('click', function() {
+            const audioPath = "./audio/Prrr.mpeg";
+            const audio = new Audio(audioPath);
+            audio.play().catch(e => console.error("Error playing audio:", e));
+            setTimeout(function() {
+                window.location.href = "https://carlostaglio.github.io/totalfull/beneficios.html";
+            }, 2000);
+        });
+    });
+    
     if (currentPath == "index.html" || currentPath == "") {
         sessionStorage.setItem("puntaje", 0);
         sessionStorage.setItem("q1", "no");
@@ -18,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
             audio.play().catch(e => console.error("Error playing audio:", e));
             setTimeout(function() {
                 window.location.href = "https://carlostaglio.github.io/totalfull/pregunta1.html";
-            }, 1500);
+            }, 2000);
         });
 
         const beneficiosButton = document.getElementById('beneficiosButton');
@@ -28,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
             audio.play().catch(e => console.error("Error playing audio:", e));
             setTimeout(function() {
                 window.location.href = "https://carlostaglio.github.io/totalfull/beneficios.html";
-            }, 1500);
+            }, 2000);
         });
     }
 
@@ -45,14 +82,14 @@ document.addEventListener('DOMContentLoaded', function() {
         
         const pataA = document.getElementById('pata1a');
         pataA.addEventListener('click', async function() {
-            const audioPath = "./audio/Prrr.mp3";
+            const audioPath = "./audio/Prrr.mpeg";
             const audio = new Audio(audioPath);
             sessionStorage.setItem("puntaje", 1);
             sessionStorage.setItem("q1", "yes");
             audio.play().catch(e => console.error("Error playing audio:", e));
             setTimeout(function() {
                 window.location.href = "https://carlostaglio.github.io/totalfull/pregunta2.html";
-            }, 1500);
+            }, 2000);
         });
 
         const pataB = document.getElementById('pata1b');
@@ -64,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
             sessionStorage.setItem("q1", "yes");
             setTimeout(function() {
                 window.location.href = "https://carlostaglio.github.io/totalfull/pregunta2.html";
-            }, 1500);
+            }, 2000);
         });
     }
 
@@ -81,14 +118,14 @@ document.addEventListener('DOMContentLoaded', function() {
         
         const pataA = document.getElementById('pata2a');
         pataA.addEventListener('click', async function() {
-            const audioPath = "./audio/Prrr.mp3";
+            const audioPath = "./audio/Prrr.mpeg";
             const audio = new Audio(audioPath);
             sessionStorage.setItem("puntaje", sessionStorage.getItem("puntaje")+1);
             sessionStorage.setItem("q2", "yes");
             audio.play().catch(e => console.error("Error playing audio:", e));
             setTimeout(function() {
                 window.location.href = "https://carlostaglio.github.io/totalfull/pregunta3.html";
-            }, 1500);
+            }, 2000);
         });
 
         const pataB = document.getElementById('pata2b');
@@ -99,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function() {
             sessionStorage.setItem("q2", "yes");
             setTimeout(function() {
                 window.location.href = "https://carlostaglio.github.io/totalfull/pregunta3.html";
-            }, 1500);
+            }, 2000);
         });
     }
 
@@ -122,19 +159,19 @@ document.addEventListener('DOMContentLoaded', function() {
             audio.play().catch(e => console.error("Error playing audio:", e));
             setTimeout(function() {
                 window.location.href = "https://carlostaglio.github.io/totalfull/pregunta4.html";
-            }, 1500);
+            }, 2000);
         });
 
         const pataB = document.getElementById('pata3b');
         pataB.addEventListener('click', async function() {
-            const audioPath = "./audio/Prrr.mp3";
+            const audioPath = "./audio/Prrr.mpeg";
             const audio = new Audio(audioPath);
             audio.play().catch(e => console.error("Error playing audio:", e));
             sessionStorage.setItem("puntaje", sessionStorage.getItem("puntaje")+1);
             sessionStorage.setItem("q1", "yes");
             setTimeout(function() {
                 window.location.href = "https://carlostaglio.github.io/totalfull/pregunta4.html";
-            }, 1500);
+            }, 2000);
         });
     }
 
@@ -151,7 +188,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         const pataA = document.getElementById('pata4a');
         pataA.addEventListener('click', async function() {
-            const audioPath = "./audio/Prrr.mp3";
+            const audioPath = "./audio/Prrr.mpeg";
             const audio = new Audio(audioPath);
             sessionStorage.setItem("puntaje", 1);
             sessionStorage.setItem("q4", "yes");
@@ -162,7 +199,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 } else {
                     window.location.href = "https://carlostaglio.github.io/totalfull/bastante_bien.html";
                 }
-            }, 1500);
+            }, 2000);
         });
 
         const pataB = document.getElementById('pata4b');
@@ -173,7 +210,7 @@ document.addEventListener('DOMContentLoaded', function() {
             sessionStorage.setItem("q4", "yes");
             setTimeout(function() {
                 window.location.href = "https://carlostaglio.github.io/totalfull/bastante_bien.html";
-            }, 1500);
+            }, 2000);
         });
     }
 
