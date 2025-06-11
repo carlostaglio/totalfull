@@ -28,7 +28,7 @@ p {
     padding-right: 0px;
 }
 
-.carde:focus .front {
+.active .front {
     background: #fff;
     box-shadow: 0 0 40px 2px var(--verdeModoAhorro);
     /* box-shadow: 0 0 20px 1px rgba(0,0,0,0.5); */
@@ -37,13 +37,13 @@ p {
 
 }
 
-.carde:focus .front h2 {
+.active .front h2 {
     color: #6D776F;
 
 
 }
 
-.carde:focus .back {
+.active .back {
     transform: translateY(0);
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.5);
 }
@@ -79,7 +79,7 @@ p {
     background: #fff;
 }
 
-.back:focus {
+.active .back {
     background: #fff;
     color: #6D776F;
 }
@@ -135,14 +135,14 @@ p {
 }
 
 .pata1 {
-    width: 40vw;
+    height: 65vh;
     position: absolute;
     bottom: 0;
     left: 5%;
 }
 
 .pata2 {
-    width: 40vw;
+    height: 65vh;
     position: absolute;
     bottom: 0;
     right: 5%;

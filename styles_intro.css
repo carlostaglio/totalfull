@@ -4,7 +4,7 @@ body {
 
 /* Asegura que el body ocupe toda la pantalla y maneja el fondo */
 .custom-bg {
-    background-image: url('./images/recurso 9.png'); /* Reemplaza con la ruta de tu imagen */
+    background-image: url("./images/Recurso9.png");
     background-size: contain; /* Asegura que la imagen cubra toda la pantalla */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */

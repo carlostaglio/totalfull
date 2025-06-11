@@ -21,4 +21,17 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
     });
+
+    const cards = document.getElementsByClassName('carde');
+    console.log(cards);
+    Array.from(cards).forEach(function(card) {
+        card.addEventListener('click', function() {
+            if(card.classList.contains('active')) {
+                card.classList.remove('active');
+            } else {
+                card.classList.add('active');
+            }
+
+        });
+    });
 });
