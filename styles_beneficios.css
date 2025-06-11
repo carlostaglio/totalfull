@@ -121,8 +121,8 @@ p {
 .logo {
     position: absolute;
     width: 25vw;
-    bottom: 3%;
-    right: 10%;
+    top: 3%;
+    left: 5%;
 }
 
 .paragraph-felicitacion {
