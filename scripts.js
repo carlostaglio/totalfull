@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const pathArray = window.location.pathname.split("/");
     const currentPath = pathArray[pathArray.length - 1];
-    if (currentPath == "index.html") {
+    console.log(currentPath);
+    if (currentPath == "index.html" || currentPath == "") {
         sessionStorage.setItem("puntaje", 0);
         sessionStorage.setItem("q1", false);
         sessionStorage.setItem("q2", false);
