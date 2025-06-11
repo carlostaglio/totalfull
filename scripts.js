@@ -1,5 +1,8 @@
 
 document.addEventListener('DOMContentLoaded', function() {
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
     const pawPads = document.querySelectorAll('.paw-pad');
 
     pawPads.forEach(pad => {
@@ -22,19 +25,47 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    const currentPath = window.location.pathname;
-    console.log(currentPath); 
-    const cards = document.getElementsByClassName('carde');
-    Array.from(cards).forEach(function(card) {
-        card.addEventListener('click', function() {
-            if(card.classList.contains('active')) {
-                card.classList.remove('active');
-            } else {
-                card.classList.add('active');
-            }
-
+    const pathArray = window.location.pathname.split("/");
+    const currentPath = pathArray[pathArray.length - 1];
+    if (currentPath == "index.html") {
+        const juegoButton = document.getElementById('juegoButton');
+        juegoButton.addEventListener('click', async function() {
+            const audioPath = "./audio/Meow.mp3";
+            const audio = new Audio(audioPath);
+            audio.play().catch(e => console.error("Error playing audio:", e));
+            setTimeout(function() {
+                window.location.href = "https://carlostaglio.github.io/totalfull/pregunta1.html";
+            }, 1500);
         });
-    });
+
+        const beneficiosButton = document.getElementById('beneficiosButton');
+        beneficiosButton.addEventListener('click', async function() {
+            const audioPath = "./audio/Meow.mp3";
+            const audio = new Audio(audioPath);
+            audio.play().catch(e => console.error("Error playing audio:", e));
+            setTimeout(function() {
+                window.location.href = "https://carlostaglio.github.io/totalfull/beneficios.html";
+            }, 1500);
+        });
+    }
+
+    if (currentPath == "beneficios.html") {
+        const cards = document.getElementsByClassName('carde');
+        Array.from(cards).forEach(function(card) {
+            card.addEventListener('click', function() {
+                
+                if(card.classList.contains('active')) {
+                    card.classList.remove('active');
+                } else {
+                    card.classList.add('active');
+                    const audioPath = "./audio/Meow.mp3";
+                    const audio = new Audio(audioPath);
+                    audio.play().catch(e => console.error("Error playing audio:", e));
+                }
+            });
+        });
+    }
+    
 
 
 });
