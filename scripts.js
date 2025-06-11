@@ -37,7 +37,9 @@ document.addEventListener('DOMContentLoaded', function() {
             window.location.href = "https://carlostaglio.github.io/totalfull/";
         }
         if (sessionStorage.getItem("q1")) {
-            window.location.href = "https://carlostaglio.github.io/totalfull/pregunta2.html";
+            if(sessionStorage.getItem("q1") == true) {
+                window.location.href = "https://carlostaglio.github.io/totalfull/pregunta2.html";
+            }
         }
         console.log(sessionStorage.getItem("puntaje"));
         
@@ -71,7 +73,9 @@ document.addEventListener('DOMContentLoaded', function() {
             window.location.href = "https://carlostaglio.github.io/totalfull/";
         }
         if (sessionStorage.getItem("q2")) {
-            window.location.href = "https://carlostaglio.github.io/totalfull/pregunta3.html";
+            if(sessionStorage.getItem("q2") == true) {
+                window.location.href = "https://carlostaglio.github.io/totalfull/pregunta3.html";
+            }
         }
         console.log(sessionStorage.getItem("puntaje"));
         
@@ -104,7 +108,9 @@ document.addEventListener('DOMContentLoaded', function() {
             window.location.href = "https://carlostaglio.github.io/totalfull/";
         }
         if (sessionStorage.getItem("q3")) {
-            window.location.href = "https://carlostaglio.github.io/totalfull/pregunta4.html";
+            if(sessionStorage.getItem("q3") == true) {
+                window.location.href = "https://carlostaglio.github.io/totalfull/pregunta4.html";
+            }
         }
         console.log(sessionStorage.getItem("puntaje"));
         
@@ -137,7 +143,9 @@ document.addEventListener('DOMContentLoaded', function() {
             window.location.href = "https://carlostaglio.github.io/totalfull/";
         }
         if (sessionStorage.getItem("q4")) {
-            window.location.href = "https://carlostaglio.github.io/totalfull/beneficios.html";
+            if(sessionStorage.getItem("q4") == true) {
+                window.location.href = "https://carlostaglio.github.io/totalfull/beneficios.html";
+            }
         }
         console.log(sessionStorage.getItem("puntaje"));
         
