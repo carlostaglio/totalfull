@@ -55,7 +55,7 @@ p {
     text-align: center;
     padding: 50px 0;
     transition: 0.5s;
-    transform: translateY(100px);
+    transform: translateY(90px);
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.5);
     height: 250px;
 

@@ -22,8 +22,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    const currentPath = window.location.pathname;
+    console.log(currentPath); 
     const cards = document.getElementsByClassName('carde');
-    console.log(cards);
     Array.from(cards).forEach(function(card) {
         card.addEventListener('click', function() {
             if(card.classList.contains('active')) {
@@ -34,4 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         });
     });
+
+
 });
